@@ -1,0 +1,22 @@
+form#wc_quick_buy_form p {
+	margin-bottom: 0px !important;
+}
+
+
+form#wc_quick_buy_form input, 
+form#wc_quick_buy_form textarea,
+form#wc_quick_buy_form select {
+    width: 95%;
+    margin: 0 !important;
+
+}
+
+input#wc_quick_buy_name {
+    margin: 0;
+}
+
+.parsley-errors-list li {
+    padding: 0;
+    margin: 0;
+    color: red;
+}
