@@ -51,9 +51,12 @@ When User fill the form, place order and then redirect to thankyou page and admi
 <p><strong>Shortcode Args</strong></p>
 
 <ol>
-<li><p>product : product id to generate quick buy order form Eg : <code>[wc_quick_buy_form product="22"]</code></p></li>
-<li><p>button : product id to generate quick buy button Eg : <code>[wc_quick_buy product="22"]</code></p></li>
-<li><p>label : custom text for generated button Eg : <code>[wc_quick_buy label="Hurry Up!!"]</code></p></li>
+<li>order form: product id to generate quick buy order form Eg : <code>[wc_quick_buy_form product="22"]</code>
+</li>
+<li>button : product id to generate quick buy button Eg : <code>[wc_quick_buy product="22"]</code>
+</li>
+<li>label : custom text for generated button Eg : <code>[wc_quick_buy label="Hurry Up!!"]</code>
+</li>
 </ol>
 
 <p><strong>Settings Available Under</strong>
@@ -127,7 +130,8 @@ Woocommerce Settings ==&gt; Products ==&gt; WC Quick Buy Order Form</p>
 That's great. We are always open to your input, and we would like to add anything we think will be useful to a lot of people. Please send your comment/idea/issues to <a href="mailto:bmconcepts@hotmail.com">bmconcepts@hotmail.com</a></p>
 
 <p><strong>How To Call This Plugin in a template File ?</strong><br>
-This Plugin Can Be Called Using <code>&lt;?php do_shortcode('[wc_quick_buy]') ?&gt;</code> short code</p>
+This Plugin Can Be Called Using <code>&lt;?php do_shortcode('[wc_quick_buy_form]') ?&gt;</code> short code to show form
+This Plugin Can Be Called Using <code>&lt;?php do_shortcode('[wc_quick_buy]') ?&gt;</code> short code to show button</p>
 
 <p><strong>Where Are The Plugin Settings Available ?</strong>
 <code>Woo Commerce Settings ==&gt; Products ==&gt; WC Quick Buy Order</code></p>
