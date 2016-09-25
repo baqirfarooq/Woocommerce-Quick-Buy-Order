@@ -220,7 +220,10 @@ function prefix_ajax_create_wc_quick_buy()
           // wp_set_object_terms( $order_id, 'completed', 'shop_order_status' );        
 
           do_action( 'woocommerce_new_order', $order_id );
-
+          // send notification email
+          WC()->mailer()->emails['WC_Email_New_Order']->trigger($order_id);
+          WC()->mailer()->emails['WC_Email_Customer_Processing_Order']->trigger($order_id);
+	      
           $response = json_encode([
             'success'=>true, 
             'message'=>'Your order has been Submitted Successfully!', 
