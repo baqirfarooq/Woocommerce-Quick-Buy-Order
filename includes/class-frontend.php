@@ -53,7 +53,7 @@ class WooCommerce_Quick_Buy_FrontEnd {
 		
 		wp_enqueue_script("parsley", 'https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.4.4/parsley.min.js', array(), false, true);
         wp_enqueue_script(WCQB_DB.'_maskinput', WCQB_JS.'jquery.maskedinput.min.js', array( 'jquery'),false, true );
-        wp_enqueue_script(WCQB_DB.'_maskinput', WCQB_JS.'bootstrap3-typeahead.min.js', array( 'jquery'),false, true );
+        wp_enqueue_script(WCQB_DB.'_typeahead', WCQB_JS.'bootstrap3-typeahead.min.js', array( 'jquery'),false, true );
         wp_enqueue_script(WCQB_DB.'_frontend', WCQB_JS.'frontend.js', array( 'jquery'),WCQB_V );
 
     }
